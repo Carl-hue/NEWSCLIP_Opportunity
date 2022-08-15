@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+body{background-color: rgba(0, 48, 121, 0.753);}
+</style>
+
+<body>
+  <div class="topnav">
+    <a class="active" href="file:///C:/Users/user-pc/Desktop/htmlTest.html">HOME</a>
+    <a href="https://www.vw.co.za/en/models.html">Volkswagen</a>
+    <a href="https://www.linkedin.com/in/carl-lubbe-82b2b1164/">About</a>
+  </div>
+  
+  <!-- <div style="padding-left:16px">
+    <h2>Testing NavBar</h2>
+    <p>Find out how to switch html pages.</p>
+  </div> -->
+    <!-- Try to figure out how to adjust the accordions 'hitbox' -->
+    <div class="accordion-body"> 
+        <div class="accordion">
+          <h1>Volkswagen Car Data</h1>
+          <hr>
+          <div class="container">
+            <div class="label">Creator</div>
+            <div class="content">Carl Lubbe is a grad from Vega who knows how to code in Unity using Visual Studio and has never touched JS or CSS, he has looked at HTML in grade 10 but that is about it. I would very much like to learn new things in this field so that I can grow and eventually bridge into UX and UI.
+              <br></br>
+              I very much enjoyed the opportunity to learn new languages over the weekend. Unfortunatly I never got around to setting up the database and API, I do however have a little bit of knowlege regarding Web API's in Android Studio, but I have to learn more in order to figure out all the small kinks in the website as well as how to create and link a databse to it.
+              <br></br>
+              Thank you for task! Was good fun.
+            </div>
+          </div>
+          <hr>
+
+          <div class="container">
+            <div class="label">Polo Vivo Hatch</div>
+            <input class="result" type="text" id="Polo Vivo Hatch" value=250 />
+            <button onClick="valInc()">Increase</button>
+            <button onClick="valDec()">Decrease</button>
+            <img src="https://media.volkswagen.com/vw-6RS-my2022/iris?COSY-EU-100-1713VV%25lXm0kYNazzSU9mu0fO7AfWyyJ1vTvsd2SkppEKhjTtKSK8CbESMM8H2Lvyr0Q%25UOVggAa5hP4KYwqeQeOOndIyyJ8H3WDZ4HvCJii8vHRwoo0gZrnZlO4O6bLKKFNMbTggAcEvvFHOu5ZxxHlZkPF%25uAnW07ZZU8pVfp4ExIIrsJYU001bXUUNyEPg3aaBegS8hH9zzSAly3QGE0q2TwPP7m3sOXjO2mf2GKl0dfzMKV701bXNUPxYyN3AxLLylx1WtxA288xCH5jjBAqcyyTmph&width=648" alt="car1" class="CarImage">
+            <br></br>
+            <div class="content">
+              <h2>Summary</h2> 
+              The Polo Vivo is here and it’s equipped with a variety of features to suit you and your crew. From the front electric windows, ISOFIX mounting points for baby seats, Ultrasonic alarm, to its stylish exterior and sound system, the Polo Vivo has it all. With features as attractive as this, everyone will want to share the ride.
+              <h2>Onboard Components</h2>
+              <ul>
+                <li>Electronic rev counter</li>
+                <li>Digital clock</li>
+                <li>Digital trip recorder</li>
+                <li>Front door pockets</li>
+                <li>Height- and reach-adjustable steering column</li>
+                <li>Passenger vanity mirror</li>
+                <li>Manual anti-dazzle rear view mirror</li>
+                <li>MPower steering</li>
+                <li>Air-conditioning</li>
+              </ul>  
+            </div>    
+            <h3>R 237 000,00 p/car</h3>
+          </div>
+          <hr>
+
+          <div class="container">
+            <div class="label">Polo Sedan</div>
+            <input class="result" type="text" id="Polo Sedan" value=556 />
+            <button onClick="valInc()">Increase</button>
+            <button onClick="valDec()">Decrease</button>
+            <img src="https://media.volkswagen.com/vw-604-my2021/iris?COSY-EU-100-1713VV%25lXm0kYNazzSU9mu0fO7AfWyyJ1vTvsd2SlppEKhjTtKSK8Cbg4MM8H2Lvyr0Q%25UOVggAa5hP4KYwqeQeOOnP8yyJ8H3WDZ4HvCJii8YMNCoo0gZrnZlO4O6bLKKFNMbTggAcEvvFHOu5ZxxHlZkPF%25uAnW07ZZU8pVfp4ExIIrsJYU001bXUUNyEPg3aaBegS8hK9zzSAly3QGE0q2TwPP7m3sOXjO2mf2GKl0dfzMKV700%25XBUPxY1EX4xLLylx1WtxA288x8FNjjBiEfyyTfjImmWIivppGaqdwwJrrO77l9wCCCEZwuRRVePsrrXyVR66tmDcNN5ewIqq9qePAAZC02SSiXpKeefbfHoo2rPl%25%25nL1zDDuWV3aa0Goc11Fb1h88xI4kjjBimyyyTygjmmWmCMppGIavwwJuRf77l44jCCEXjYRRVGtOrrX3FH66tpCdNN5XpBqq9k1fAAZ%250XSSiRiUeefab5oo2YYl%25%25nTdhDDuqSDaa0Ydc11FOBz88xzHMjjBQ5fyyTogDmmWhzMppGRWLwwJvan77l8kjCCE8cyRRVjVrrrXm0966tSqdNN5nxsqq9mlNAAZC6iSSiRqteefZxuoo2vBN%25%25n%25ToDDuqSxaa01qF11FLbk88xl8njjBjxHyyTs7KmmWCZlppGacYwwJ55877l3SPCCEc4nRRVqz5rrXSe466tH9YNN5hvsqq9k5TAAZArQSSiWSpeefEb3oo2vGQ%25%25nB4FDDubspaa05Ig11Fbhy88xP1H&width=648" alt="car1" class="CarImage">
+            <br></br>
+            <div class="content">
+              <h2>Summary</h2> 
+              The Polo Sedan is more than just a car; it’s more than just new technologies; it’s more than beauty; it’s a vehicle ready for adventures. The second generation Polo is made for wherever life may take you.
+              <h2>Onboard Components</h2>
+              <ul>
+                <li>Electronic rev counter</li>
+                <li>Digital clock</li>
+                <li>Digital trip recorder</li>
+                <li>Front door pockets</li>
+                <li>Height- and reach-adjustable steering column</li>
+                <li>Passenger vanity mirror</li>
+                <li>Manual anti-dazzle rear view mirror</li>
+                <li>MPower steering</li>
+                <li>The RCD R340G radio</li>
+                <li>Bluetooth and USB functionality</li>
+                <li> App-Connect and a colour touchscreen</li>
+                <li>Four premium speakers</li>
+              </ul>  
+            </div>    
+            <h3>R 271 100,00 p/car</h3>
+          </div>
+          <hr>
+
+          <div class="container">
+            <div class="label">New Polo</div>
+            <input class="result" type="text" id="New Polo" value=341 />
+            <button onClick="valInc()">Increase</button>
+            <button onClick="valDec()">Decrease</button>
+            <img src="https://r-media.volkswagen.com/v1/VW/2G0/2022/MP1/20220805/en-ZA-za/6U6U/EL/00A,0A2,0B1,0EM,0K0,0NW,0P0,0TD,0V6,1A5,1D0,1G2,1KA,1NC,1SA,1T2,1TC,1X0,1ZG,2FB,2H0,2JG,31K,3B4,3C7,3FA,3GA,3H0,3L3,3NB,3Q6,3QT,3U1,3ZB,40H,4A0,4AP,4I2,4KC,4L2,4N1,4P0,4R4,4UF,4X3,51A,5MA,5RV,5SJ,5ZF,6E0,6FF,6I0,6K0,6NA,6PA,6Q1,6XD,7J1,7L6,7M5,7MM,7P0,7Q0,7W0,7X0,7Y0,8G0,8IT,8N8,8Q1,8RE,8S3,8T9,8VG,8WA,8Z4,8ZG,9AB,9C7,9JA,9T0,9ZX,A8C,AV0,B2E,DI6,E0A,EF0,EL0,EZ1,G0C,GP1,I8I,K8G,L0R,N4C,NZ0,Q1A,QH0,QJ0,QK0,QQ0,QV0,TJ4,UD0,VF0,011/D6MOFASideview/b19d7b4a-df80-487c-908a-47785dbb35fc/9a145061803077264324fa98ba8aa3fcbc2bfe266ddfae2bc691eb057447aaf2.png?width=648" alt="car1" class="CarImage">
+            <br></br>
+            <div class="content">
+              <h2>Summary</h2> 
+              Everything about the new Polo will give you the drive to go further. The sharpened body design and IQ.LIGHT matrix LEDs reflect confidence in true Polo style. The fresh design and new exterior features are just the start of the Polo’s innovation. As you look closer, the IQ.DRIVE features and advanced interior digitalisation reveal the intelligence behind confident driving.
+              <h2>Onboard Components</h2>
+              <ul>
+                <li>Electronic rev counter</li>
+                <li>Digital clock</li>
+                <li>Digital trip recorder</li>
+                <li>Travel Assist</li>
+                <li>Climatronic Touch aircon system</li>
+                <li>Front Assist and Park Assist</li>
+                <li>Passenger vanity mirror</li>
+                <li>Manual anti-dazzle rear view mirror</li>
+                <li>MPower steering</li>
+                <li>Adaptive Cruise Control</li>
+                <li>Bluetooth and USB functionality</li>
+                <li> App-Connect and a colour touchscreen</li>
+                <li>Dynamic Light Assist</li>
+                <li>Voice control</li>
+              </ul>  
+            </div>    
+            <h3>R 319 700,00 p/car</h3>
+          </div>
+          <hr>
+
+          <div class="container">
+            <div class="label">New Golf</div>
+            <input class="result" type="text" id="New Golf" value=547 />
+            <button onClick="valInc()">Increase</button>
+            <button onClick="valDec()">Decrease</button>
+            <img src="https://r-media.volkswagen.com/v1/VW/5H0/2023/MP1/20220919/en-ZA-za/P8P8/UG/0B1,0FA,0IJ,0K0,0N4,0NH,0P0,0TD,1A5,1D0,1E5,1G9,1J2,1KJ,1LG,1X0,2CM,2F0,2I0,2JG,2PT,31K,3A2,3CA,3FA,3H0,3LJ,3NU,3PJ,3T2,4A3,4D3,4E0,4GF,4K6,4KC,4L6,4P0,4UF,4X4,4ZQ,5C0,5D1,5JA,5MR,5XJ,6E3,6FF,6I0,6K0,6Q6,6T2,6XR,6Y8,7B2,7J2,7MV,7P8,7Q0,7X2,7Y0,8IY,8N6,8Q3,8RL,8T6,8TL,8VG,8WK,8Z4,8ZH,9JA,9M0,9P3,9Z0,9ZV,A8H,AV0,B0A,C0Z,DQ4,E0A,EL0,EZ1,G1C,GW0,I8Q,K8G,KA0,KH7,KS0,L0R,N7J,NZ0,Q4P,QJ1,QK1,QQ4,QV0,T3Q,U9E,UD2,UH2,VF1,011/D6MOFASideview/b19d7b4a-df80-487c-908a-47785dbb35fc/d5850f5b4810ef64947acf9515e69031e8265b9f79cbcbabc06f93d1abdd70ec.png?width=648" alt="car1" class="CarImage">
+            <br></br>
+            <div class="content">
+              <h2>Summary</h2> 
+              The rebel is back on the road and creating a sensation – and with even more driving pleasure and goosebumps for its drivers.
+              <h2>Onboard Components</h2>
+              <ul>
+                <li>Electronic rev counter</li>
+                <li>Digital clock</li>
+                <li>Digital trip recorder</li>
+                <li>Travel Assist</li>
+                <li>Climatronic Touch aircon system</li>
+                <li>Front Assist and Park Assist</li>
+                <li>Passenger vanity mirror</li>
+                <li>Manual anti-dazzle rear view mirror</li>
+                <li>MPower steering</li>
+                <li>Adaptive Cruise Control</li>
+                <li>Bluetooth and USB functionality</li>
+                <li> App-Connect and a colour touchscreen</li>
+                <li>Dynamic Light Assist</li>
+                <li>Voice control</li>
+              </ul>  
+            </div>    
+            <h3>R 696 700,00  p/car</h3>
+          </div>
+          <hr>
+
+          <div class="container">
+            <div class="label">Taigo</div>
+            <input class="result" type="text" id="Taigo" value=345 />
+            <button onClick="valInc()">Increase</button>
+            <button onClick="valDec()">Decrease</button>
+            <img src="https://r-media.volkswagen.com/v1/VW/2F0/2022/MP1/20220617/en-ZA-za/P8P8/WS/00B,0A2,0B1,0EG,0FB,0K0,0N6,0NB,0P0,0TD,1A7,1J2,1KV,1T2,1X0,1ZS,2C5,2FE,2H5,2JP,3A2,3C7,3FA,3GD,3H0,3L3,3NZ,3Q6,3QT,3S2,3ZB,45G,4A0,4GF,4K3,4KF,4L6,4N1,4P2,4R4,4UF,4X3,4ZC,5D1,5JA,5PL,5TT,5XJ,5ZF,6E3,6FF,6I0,6K0,6NW,6PC,6Q2,6YD,7M9,7P4,7Q0,7W0,7X2,7Y0,8AR,8G4,8IV,8N6,8Q3,8RL,8S6,8T6,8TL,8VG,8WH,9AK,9JD,9P4,9S0,9T0,9ZX,A9I,AV0,DS8,E0A,EF1,EL0,EZ1,G1C,K8G,KA0,L0R,N3K,NZ0,Q4H,QJ3,QK1,QN4,QQ3,QV0,TJ4,U9C,UD3,VF2,011/D6MOFASideview/b19d7b4a-df80-487c-908a-47785dbb35fc/7f6b73f35a71a025fc69b27eb563f5287b6c044471fa667e2dfc38cc9e2ce74e.png?width=648" alt="car1" class="CarImage">
+            <br></br>
+            <div class="content">
+              <h2>Summary</h2> 
+              The Taigo is expressive in every way. This car is boldly redefining style with its sporty-coupé shape, making it Volkswagen’s newest SUV. Available in the Life, Style or R-line models, the Taigo provides you with the liberation you’ve been searching for in a car. Both the exterior and interior represent where sport meets function and where tech meets taste. The Taigo has been designed with you in mind, with intuitive innovation that makes every aspect of your journey feel effortless. Let’s go – in the new Taigo.
+              <h2>Onboard Components</h2>
+              <ul>
+                <li>Forward Collision Warning Front Assist with Autonomous Emergency Braking</li>
+                <li>6.5-inch radio display</li>
+                <li>Digital trip recorder</li>
+                <li>Wireless phone charging</li>
+                <li>Climatronic Touch aircon system</li>
+                <li>A diffuser –in high-gloss black</li>
+                <li>Passenger vanity mirror</li>
+                <li>Manual anti-dazzle rear view mirror</li>
+                <li>Panoramic sunroof</li>
+                <li>Adaptive Cruise Control</li>
+                <li>Bluetooth and USB functionality</li>
+                <li>App-Connect and a colour touchscreen</li>
+                <li>Dynamic Light Assist</li>
+                <li>Voice control</li>
+              </ul>  
+            </div>    
+            <h3>R 429 900,00   p/car</h3>
+          </div>
+          <hr>
+
+          <div class="container">
+            <div class="label">New T-Roc</div>
+            <input class="result" type="text" id="NewT-Roc" value=372 />
+            <button onClick="valInc()">Increase</button>
+            <button onClick="valDec()">Decrease</button>
+            <img src="https://r-media.volkswagen.com/v1/VW/2GA/2022/MP2/20220725/en-ZA-za/P8P8/EM/0A2,0B2,0IJ,0K0,0MU,0N4,0NB,0TD,1A5,1E1,1G9,1J2,1SA,1T2,1X1,1ZK,2EJ,2H5,2JX,2PE,3B4,3FA,3GN,3H0,3LJ,3NU,3PJ,3QT,3S1,3T2,3ZU,4A3,4F2,4GF,4KF,4L6,4P6,4R4,4UF,4ZR,5D1,5I6,5JA,5MY,5XJ,5ZF,6E3,6FF,6I1,6K4,6NW,6Q2,6T1,6XQ,7L6,7M9,7MV,7Q0,7W4,7X5,7Y1,8AR,8G1,8I7,8IU,8N6,8Q3,8RL,8S6,8T8,8TL,8VG,8WM,8X0,8Z4,8ZH,9AK,9I5,9JA,9M0,9P9,9S0,9ZX,A9I,AV0,B2E,C5S,DQ6,E0A,EL0,EZ1,FB0,G1D,GP1,K8G,KA0,L0R,N5X,NZ0,Q4P,QJ1,QK1,QQ3,QV0,TD3,U9C,UD0,UH2,VF1,011/D6MOFASideview/b19d7b4a-df80-487c-908a-47785dbb35fc/c9f94714938cb46c40bb204e01937d68de3ed880853fc415616dc0ae2e92ea43.png?width=648" alt="car1" class="CarImage">
+            <br></br>
+            <div class="content">
+              <h2>Summary</h2> 
+              A streamlined silhouette with dynamic lines and curves, the T-Roc is made to push boundaries. To be at the forefront of excellence. In the intersection between practical and extraordinary, it deftly combines smart, functional features with a bold and innovative design to create an SUV that truly drives to defy.
+              <h2>Onboard Components</h2>
+              <ul>
+                <li>LED Performance Light</li>
+                <li>4MOTION® technology</li>
+                <li>Digital trip recorder</li>
+                <li>Wireless phone charging</li>
+                <li>Climatronic Touch aircon system</li>
+                <li>A diffuser –in high-gloss black</li>
+                <li>Passenger vanity mirror</li>
+                <li>Manual anti-dazzle rear view mirror</li>
+                <li>The Composition Media Radio</li>
+                <li>Adaptive Cruise Control</li>
+                <li>Play music from WMA and AAC files</li>
+                <li>App-Connect and a colour touchscreen</li>
+                <li>Dynamic Light Assist</li>
+                <li>Voice control</li>
+              </ul>  
+            </div>    
+            <h3>R 563 800,00   p/car</h3>
+          </div>
+          <hr>
+
+          <div class="container">
+            <div class="label">T-Cross</div>
+            <input class="result" type="text" id="T-Cross" value=623 />
+            <button onClick="valInc()">Increase</button>
+            <button onClick="valDec()">Decrease</button>
+            <img src="https://r-media.volkswagen.com/v1/VW/2GC/2022/MP1/20220805/en-ZA-za/0Q0Q/UL/00A,0A2,0B1,0EC,0FB,0K0,0N6,0NB,0P0,0TD,1A5,1D0,1KA,1T2,1X0,1ZS,2C5,2CC,2FD,2H0,2JG,31K,3A2,3C7,3FA,3GD,3H0,3L3,3NQ,3Q6,3QT,3S2,3U1,3ZU,40L,4A0,4AP,4K3,4KC,4L6,4P0,4R4,4UF,4Z5,4ZE,51A,5MB,5RV,5SJ,5XS,5ZF,6E3,6FF,6I0,6K0,6NA,6PC,6Q2,6YD,7M5,7P4,7Q0,7W0,7X2,7Y0,8ID,8K3,8N6,8Q1,8RL,8S3,8T6,8TL,8VG,8WH,8X0,8ZG,9AB,9E1,9JD,9P4,9S5,9ZX,A8T,AV0,E0A,EF0,EL0,EZ1,G0C,I8I,K8G,KA0,L0R,N2H,NZ0,Q1A,QH0,QJ0,QK0,QN2,QQ0,QV0,TJ4,U5A,U9C,VF0,011/D6MOFASideview/b19d7b4a-df80-487c-908a-47785dbb35fc/51963034b02c1c7c7a3548af6214079bc771c9476952998c54d0547922aca3d8.png?width=648" alt="car1" class="CarImage">
+            <br></br>
+            <div class="content">
+              <h2>Summary</h2> 
+              The ultimate T-Cross comes in the ultimate package. The T-Cross 1.5 TSI 110kW R-Line has a powerfully unique design package that’s ultra-modern and even bolder. Drive the T-Cross R-Line with design stand-outs like the 18” “Nevada” alloy wheels, App-Connect with wireless charging, and Active Info Display.
+              <h2>Onboard Components</h2>
+              <ul>
+                <li>LED Performance Light</li>
+                <li>16-inch “Belmont” alloy wheels</li>
+                <li>Digital trip recorder</li>
+                <li>Wireless phone charging</li>
+                <li>Climatronic Touch aircon system</li>
+                <li>A diffuser –in high-gloss black</li>
+                <li>Passenger vanity mirror</li>
+                <li>Cruise Control with a Speed Limiter</li>
+                <li>12.3-inch screen</li>
+                <li>Adaptive Cruise Control</li>
+                <li>High Resolution TFT Dash Display with Customisable Information</li>
+                <li>App-Connect and a colour touchscreen</li>
+                <li>Dynamic Light Assist</li>
+                <li>8-channel amplifier with a 300 watts output</li>
+              </ul>  
+            </div>    
+            <h3>R 376 300,00  p/car</h3>
+          </div>
+          <hr>
+
+          <div class="container">
+            <div class="label">New Tiguan</div>
+            <input class="result" type="text" id="New Tiguan" value=742 />
+            <button onClick="valInc()">Increase</button>
+            <button onClick="valDec()">Decrease</button>
+            <img src="https://r-media.volkswagen.com/v1/VW/550/2022/MP1/20220812/en-ZA-za/L9L9/OA/0B3,0EX,0K0,0NB,0P0,0RF,0TP,0Y2,1A5,1D0,1E5,1G8,1SL,1X1,1XT,1ZW,2EW,2H4,2JF,31K,3B4,3CA,3FU,3GA,3H0,3LJ,3PR,3QT,3S1,3T2,3ZU,4A3,4E7,4F2,4GF,4KF,4L6,4UF,4X3,4ZB,53C,5C0,5J3,5KR,5RV,5SJ,5TE,5XJ,5ZC,6E4,6FH,6I0,6K0,6NW,6Q2,6T1,6XQ,7AS,7B3,7IX,7L6,7M7,7MV,7N0,7P1,7T7,7W0,7X2,7Y0,8AR,8FA,8G0,8IX,8N6,8RM,8S6,8SK,8T6,8TB,8WP,8X0,8Z4,8ZH,9E5,9I5,9JA,9M0,9S0,9Z0,9ZX,A9R,AV0,B2E,DR5,E0A,EL0,EZ1,FB0,G1D,GP1,K8G,KA0,KH7,KL1,KS0,L0R,N5Y,NZ0,Q4H,QJ3,QK0,QQ9,QV0,T3W,U5A,U9C,UH2,UK3,VF1,011/D6MOFASideview/b19d7b4a-df80-487c-908a-47785dbb35fc/e6f8ab5b633859ac5313171dd0e2cf8bc39612aca3f6c29f3cc2e90d31b0f44e.png?width=648" alt="car1" class="CarImage">
+            <br></br>
+            <div class="content">
+              <h2>Summary</h2> 
+              More powerful, comfortable and connected than ever before – the new Tiguan shows what it can do. Intelligent technology gives it exceptional abilities. As a dynamic SUV it’s redefining what’s possible.
+              <h2>Onboard Components</h2>
+              <ul>
+                <li>LED Performance Light</li>
+                <li>Digital Cockpit Pro with its 26 cm (10.25 inch) TFT colour display</li>
+                <li>Digital trip recorder</li>
+                <li>Wireless phone charging</li>
+                <li>Climatronic Touch aircon system</li>
+                <li>LED tail light clusters and the optional IQ.LIGHT</li>
+                <li>Integrated dynamic turn signal</li>
+                <li>Cruise Control with a Speed Limiter</li>
+                <li>Emergency Assist*</li>
+                <li>Adaptive Cruise Control</li>
+                <li>Front Assist emergency braking</li>
+                <li>Lane assist</li>
+                <li>Dynamic Light Assist</li>
+                <li>8-channel amplifier with a 300 watts output</li>
+              </ul>  
+            </div>    
+            <h3>R 558 900,00  p/car</h3>
+          </div>
+          <hr>
+
+          <div class="container">
+            <div class="label">Touareg</div>
+            <input class="result" type="text" id="Touareg" value=109 />
+            <button onClick="valInc()">Increase</button>
+            <button onClick="valDec()">Decrease</button>
+            <img src="https://r-media.volkswagen.com/v1/VW/760/2022/MP2/20220808/en-ZA-za/3M3M/VM/0E1,0F3,0K0,0NB,0P6,1BA,1D9,1P0,1SF,1T3,1VH,1ZA,2C5,2ED,2FE,2G5,2JC,2P2,3A0,3CX,3D1,3F6,3FU,3GM,3L8,3NS,3S1,3U7,3Y4,4A3,4AP,4D3,4GF,4I3,4KC,4UF,4X4,4ZN,5D1,5I6,5MU,5RV,5SJ,5ZD,6A0,6D1,6FG,6I0,6KA,6M3,6MB,6NJ,6SJ,6XL,7IG,7L7,7M9,7US,7X5,7Y0,8G1,8I6,8IT,8RM,8SK,8T8,8TD,8X0,8Y1,8Z4,9AD,9JB,9M0,9R0,9S7,9Z3,9ZX,A8C,AV0,B0A,CL0,DD7,E0A,ER2,FK0,FT0,GZ0,I8J,IW0,K4H,KA2,KS0,L0R,N1X,Q2J,QK1,QQ2,QV0,TS8,U5A,U9C,UK3,VC0,VF0,011/D6MOFASideview/b19d7b4a-df80-487c-908a-47785dbb35fc/e5a06041a0fee5be806c031787f75bc1a3b9e9ff5ec7d602acb451039f5f92e7.png?width=648" alt="car1" class="CarImage">
+            <br></br>
+            <div class="content">
+              <h2>Summary</h2> 
+              This bold new SUV was created for those who won’t settle at the top of their game because they know there’s always more to explore in this journey of life. Built for the people who ask, “Where to from here?", we’ve designed the luxurious and technically advanced Touareg to take you on every new venture your restless spirit longs to pursue. With technological advancements such as Night Vision and IQ Light Matrix LED headlights to the 15” Innovision Cockpit, the future of luxurious exploration has arrived.
+              <h2>Onboard Components</h2>
+              <ul>
+                <li> black 21” Suzuka alloy wheels</li>
+                <li>3.0 V6 turbodiesel engine</li>
+                <li>4MOTION(R) technology</li>
+                <li>The Innovision Cockpit</li>
+                <li>Climatronic Touch aircon system</li>
+                <li>he 15” Discover Premium screen</li>
+                <li>Integrated dynamic turn signal</li>
+                <li>Cruise Control with a Speed Limiter</li>
+                <li>keyless access</li>
+                <li>Adaptive Cruise Control</li>
+                <li>Front Assist emergency braking</li>
+                <li>Q Light Matrix LED headlights</li>
+                <li>4-way electrically adjustable lumbar support</li>
+                <li>Climate Control</li>
+              </ul>  
+            </div>    
+            <h3>R 1 312 100,00  p/car</h3>
+          </div>
+          <hr>
+
+          <div class="container">
+            <div class="label">Amarok</div>
+            <input class="result" type="text" id="Amarok" value=440 />
+            <button onClick="valInc()">Increase</button>
+            <button onClick="valDec()">Decrease</button>
+            <img src="https://r-media.volkswagen.com/v1/VW/2HA/2022/MP1/20220815/en-ZA-za/X3X3/TE/0FX,0R1,0S6,1A8,1AT,1BA,1D7,1SD,1TT,1XX,1Y4,2E4,2JF,2QL,3D2,3GJ,3HB,3L5,3Q6,3RQ,3S0,3SP,3TP,3UH,48P,4A3,4K3,4M1,4R1,4UF,4X3,5AD,5D1,5HB,5MC,5XQ,6A0,6B1,6FD,6GE,6JB,6KG,6N2,6NW,6R0,6U1,6XE,7AF,7B4,7L3,7UP,7X8,8IH,8K3,8N3,8Q1,8QK,8R1,8SB,8T1,8TD,8WH,9JC,9P3,9Q4,9T0,9WT,9ZX,A8T,AV0,B2E,B53,DD7,E0A,G1G,IB0,K4E,KH4,KL1,L0R,N4L,NZ0,QL5,QN9,TS8,U5A,UI4,UL0/D6MOFASideview/b19d7b4a-df80-487c-908a-47785dbb35fc/2c434e54ef836145278e91e16022f97bfbc25ec6a4ec715e289a2b9572682b22.png?width=648" alt="car1" class="CarImage">
+            <br></br>
+            <div class="content">
+              <h2>Summary</h2> 
+              The Amarok transforms expectations of what a bakkie should be. In addition to the countless benchmark features, you've come to expect from the Amarok, its 3.0 litre V6 TDI engine delivers a brutish 190kW and 580Nm of torque. The Amarok V6 has exactly what it takes to get the job done, and then some...
+              <h2>Onboard Components</h2>
+              <ul>
+                <li>Automatic Post-Collision Braking System</li>
+                <li>17-inch disc brakes</li>
+                <li>4MOTION(R) technology</li>
+                <li>Trailer stabilisation</li>
+                <li>Anti-theft warning system</li>
+                <li>Multifunction steering</li>
+              </ul>  
+            </div>    
+            <h3>R 778 600,00  p/car</h3>
+          </div>
+          <hr>
+
+          <div class="container">
+            <div class="label">New Caddy</div>
+            <input class="result" type="text" id="New Caddy" value=300 />
+            <button onClick="valInc()">Increase</button>
+            <button onClick="valDec()">Decrease</button>
+            <img src="https://r-media.volkswagen.com/v1/VW/2KA/2023/MP1/20220815/en-ZA-za/5A5A/BS/02B,0ED,0K0,0NB,0WK,0YE,0Z0,1A8,1D1,1E0,1JA,1KU,1SB,1X0,1ZD,2DL,2FB,2H0,2J1,3A0,3CA,3D7,3FA,3H0,3JA,3L3,3LX,3NX,3QT,3RC,3S2,3U1,3W4,3ZU,41Q,4DE,4EE,4FH,4GF,4H5,4HH,4JH,4K3,4L6,4U0,4UF,4X7,4Z8,5AD,5BF,5D1,5DD,5EW,5Q2,5R2,5XR,6FF,6I0,6K0,6LG,6Q1,6XP,7AL,7B6,7N1,7P4,7Q0,7TC,7X2,7Y0,8IY,8M1,8N8,8QJ,8SA,8T6,8WM,9CW,9D0,9JC,9KA,9M0,9P3,9S5,9Z0,9ZX,A8C,AV0,DN1,E0A,EL0,EZ1,F0A,G0K,GW0,I8Q,J68,K4B,KA2,KH6,L0R,N0L,NZ0,Q1A,QK0,QL3,QN3,TS1,U5A,U9C,VF0/D6MOFASideview/b19d7b4a-df80-487c-908a-47785dbb35fc/02dd2a60fd7442f3e6f33b8a5fba10c918eaf32a7c5d2732c9e941a441487c28.png?width=648" alt="car1" class="CarImage">
+            <br></br>
+            <div class="content">
+              <h2>Summary</h2> 
+              Take on every drive with style and confidence in the new 5th generation Caddy. The updated features and design are tailored for today’s needs and requirements, making it perfect for everything from long family drives to everyday driving. The new Caddy not only stands out because of its modern honeycomb front grille and headlights, but also because it now comes with innovative driving features, advanced in-car technology and increased flexibility. Smart enough for city driving and versatile enough for your next holiday, the new Caddy is ready for whatever comes next.
+              <h2>Onboard Components</h2>
+              <ul>
+                <li>7 adjustable seats</li>
+                <li>foldable and heated wing mirrors</li>
+                <li>4MOTION(R) technology</li>
+                <li>Panoramic sunroof</li>
+                <li>Climatronic Touch aircon system</li>
+                <li>maximum load compartment volume of 2.5m3 and 3.1m3</li>
+                <li>Integrated dynamic turn signal</li>
+                <li>LED headlights</li>
+                <li>Standard black roof rails</li>
+                <li>Composition 20.96cm (8.25-inch) intuitive touchscreen radio</li>
+                <li>Front Assist emergency braking</li>
+                <li>Park-Assist with Rear-View Camera</li>
+                <li>Tow up to a maximum weight of 1500kg</li>
+                <li>6-Speed Manual transmission</li>
+              </ul>  
+            </div>    
+            <h3>R 494 200,00  p/car</h3>
+          </div>
+          <hr>
+
+          <div class="container">
+            <div class="label">New Caddy Cargo</div>
+            <input class="result" type="text" id="New Caddy Cargo" value=421 />
+            <button onClick="valInc()">Increase</button>
+            <button onClick="valDec()">Decrease</button>
+            <img src="https://r-media.volkswagen.com/v1/VW/2KA/2023/MP1/20220815/en-ZA-za/4B4B/BS/01E,02A,0ED,0K0,0NB,0YA,0Z0,1A8,1E0,1KE,1NC,1SB,1X0,1ZD,2DL,2FB,2H0,2JB,3B0,3D2,3FA,3H0,3JA,3L3,3LD,3QT,3RD,3U0,3W4,4DA,4EA,4FA,4GF,4H0,4JA,4K3,4L2,4U0,4UF,4X0,4Z3,5AD,5D1,5DC,5EV,5KS,5Q2,5R2,5WC,5XR,6FA,6I0,6K0,6LG,6Q1,6XC,7AL,7B6,7N1,7Q0,7TC,7X0,7Y0,8ID,8M0,8N8,8QJ,8SA,8T0,8WA,9CU,9D0,9JC,9KA,9M0,9P3,9S4,9Z0,9ZX,A9L,AV0,C0E,DN1,E0A,EL0,F0A,G0K,GW0,I7D,J68,K4A,KA0,KH6,L0R,N0L,NZ0,Q1A,QK0,QL3,TS1,U5A,UC7,UF0,VF0/D6MOFASideview/b19d7b4a-df80-487c-908a-47785dbb35fc/4c3c3fa601db7ce8a97f50722bb394e5ec04c95a13a3557a7bda04f3542518b3.png?width=648" alt="car1" class="CarImage">
+            <br></br>
+            <div class="content">
+              <h2>Summary</h2> 
+              Introducing, the new Caddy Cargo. A confident, capable and versatile van that’s perfect for you and your business. With innovative driver assistance systems and an ergonomic driver’s workstation, it’s made to keep up with your workload so you can be ready for whatever comes next. 
+              <h2>Onboard Components</h2>
+              <ul>
+                <li>Adjustable seats</li>
+                <li>foldable wing mirrors</li>
+                <li>Climatronic Touch aircon system</li>
+                <li>maximum load compartment volume of 2.5m3 and 3.1m3</li>
+                <li>Integrated dynamic turn signal</li>
+                <li>Composition 20.96cm (8.25-inch) intuitive touchscreen radio</li>
+                <li>Front Assist emergency braking</li>
+                <li>Park-Assist with Rear-View Camera</li>
+                <li>Tow up to a maximum weight of 1500kg</li>
+                <li>6-Speed Manual transmission</li>
+              </ul>  
+            </div>    
+            <h3>R 413 000,00   p/car</h3>
+          </div>
+          <hr>
+
+          <div class="container">
+            <div class="label">Transporter 6.1</div>
+            <input class="result" type="text" id="Transporter 6.1" value=743 />
+            <button onClick="valInc()">Increase</button>
+            <button onClick="valDec()">Decrease</button>
+            <img src="https://r-media.volkswagen.com/v1/VW/7EP/2023/MP1/20220815/en-ZA-za/6U6U/PX/0E1,0WM,1AS,1D0,1MM,1NE,1S4,1Y4,2E4,2H0,2JB,2P1,2Q0,2QA,3B4,3CA,3J6,3JA,3L2,3LN,3QN,3R0,3RC,3SH,3TH,3U0,3UF,3VA,3WA,3Y0,4A0,4E0,4FU,4GF,4H5,4HS,4JU,4L2,4N0,4S3,4UF,4X0,4Y0,4Z5,5AC,5BC,5C0,5CL,5D1,5DB,5N2,5Q2,5R2,5RQ,5SJ,5TC,5V3,5XR,6B1,6CA,6FA,6U2,6X0,6XN,7AQ,7B0,7IT,7L6,7MJ,7P6,7Q0,7X0,7Y0,8FA,8G0,8ID,8K1,8N4,8Q1,8QJ,8RE,8T0,8VA,8WA,8Z6,9CU,9HA,9JC,9KA,9LA,9M0,9N1,9NA,9S5,9Z0,9ZX,A8B,AV0,B2E,B53,CS4,E0A,EL0,EU0,EZ1,F0A,FM0,G1D,I8I,II0,IS0,K4B,KH6,L0R,M8C,N0A,NF0,NR0,NZ0,QA0,QE0,QH0,QJ0,QL3,QR8,T12,U5A,U9B,UG1/D6MOFASideview/b19d7b4a-df80-487c-908a-47785dbb35fc/d21f257a8b91443828fc0bb9987026ea47945c1dbe1d2680e46db7ca7c7250f8.png?width=648" alt="car1" class="CarImage">
+            <br></br>
+            <div class="content">
+              <h2>Summary</h2> 
+              Ever since the first Transporter rolled off the production line 70 years ago, it has set the benchmark. Back with a new edition, the Transporter 6.1 Panel Van is designed for those who get the job done. With a redesigned front end and interior, total connectivity, and plenty of space, it’s a van you’ll soon fall in love with. Plus with Volkswagen’s latest driver assist systems you can drive in total confidence. 
+              <h2>Onboard Components</h2>
+              <ul>
+                <li>State-of-the-art driver assist systems</li>
+                <li>Foldable wing mirrors</li>
+                <li>Always connected, always connecting with the innovative Infotainment System</li>
+                <li>Power output range of 81kW and 110kW.</li>
+                <li>Electromechanical speed-sensitive power steering</li>
+                <li>Breaks automatically after a collision</li>
+                <li>Crosswind Assist</li>
+                <li>6.5 inch TFT touch-screen colour display</li>
+              </ul>  
+            </div>    
+            <h3>R 461 300,00   p/car</h3>
+          </div>
+          <hr>
+
+          <div class="container">
+            <div class="label">Caravelle 6.1</div>
+            <input class="result" type="text" id="Caravelle 6.1" value=302 />
+            <button onClick="valInc()">Increase</button>
+            <button onClick="valDec()">Decrease</button>
+            <img src="https://r-media.volkswagen.com/v1/VW/7EM/2023/MP1/20220815/en-ZA-za/9913/GX/0E1,0TC,0WS,1AS,1D2,1U3,1Y4,2DW,2E4,2FD,2H0,2JG,2P5,2QC,3CA,3JA,3L4,3LQ,3QN,3R0,3RP,3SF,3TF,3U4,3VX,3Y7,4A3,4C2,4E7,4FN,4GF,4H5,4HS,4JN,4L6,4N6,4S1,4UF,4X8,4Z5,51B,5AB,5BG,5C0,5CJ,5D1,5DT,5N6,5Q4,5R4,5RQ,5SJ,5XI,5ZU,6CE,6FE,6KE,6U2,6X4,6XP,7AL,7B3,7L6,7MJ,7P8,7T7,7TD,7Y1,8A9,8AR,8FA,8G0,8IY,8K3,8N6,8Q3,8QJ,8RL,8T6,8VG,8WH,9AH,9CU,9HA,9IJ,9JC,9KA,9LA,9M0,9N1,9NA,9S0,9Z0,A8Z,AV0,B53,E0A,EL0,EU1,EZ1,F0A,FM0,G1D,IS0,K4H,KA2,L0R,M8C,N1A,NR7,NZ0,QA0,QE1,QJ1,QL5,QR8,U5A,U9C,UG1,V26/D6MOFASideview/b19d7b4a-df80-487c-908a-47785dbb35fc/2e668fc8468fc1b04a20fa119db9b26bef1a56dece7bb908ec6363677a2e26da.png?width=648" alt="car1" class="CarImage">
+            <br></br>
+            <div class="content">
+              <h2>Summary</h2> 
+              The Caravelle 6.1 is an ambitious all-rounder that earns its keep – and then some. A spacious seven seater, its bold restyling includes new head-turning colours, finishes and an updated grille design. Suited for power, the 146kW Highline’s seven-speed DSG makes for truly intelligent transmission. Plus, the new electromechanical power steering means state-of-the art driver assist systems. Navigate any journey with its advanced Digital Cockpit that delivers more connectivity than ever before. Performance, comfort, and style – the Caravelle double ticks all the boxes. 
+              <h2>Onboard Components</h2>
+              <ul>
+                <li>Electro-mechanical power steering</li>
+                <li>DCC</li>
+                <li>Chrome detail and LED headlights</li>
+                <li>Hill Descent ,Crosswind Assist and  Tyre Pressure Monitoring</li>
+                <li>Dynamic chasis control</li>
+                <li>Multi-plate clutch on the rear axle</li>
+                <li>WeConnect Go</li>
+                <li>Hi-res 10.25 inch LED</li>
+              </ul>  
+            </div>    
+            <h3>R 1 306 500,00  p/car</h3>
+          </div>
+          <hr>
+
+          <div class="container">
+            <div class="label">California 6.1</div>
+            <input class="result" type="text" id="California 6.1" value=206 />
+            <button onClick="valInc()">Increase</button>
+            <button onClick="valDec()">Decrease</button>
+            <img src="https://r-media.volkswagen.com/v1/VW/7EP/2023/MP1/20220815/en-ZA-za/9909/DJ/0E1,0TJ,0WS,1AS,1D2,1S4,1U5,1W4,1Y4,2E4,2FD,2H0,2JG,2P1,2Q0,2QD,2S3,3CA,3JA,3L0,3LP,3QN,3RJ,3S4,3SQ,3TQ,3U7,3UA,3VZ,3WA,3Y0,40M,4A3,4E0,4FN,4GF,4H5,4HS,4JN,4L6,4N3,4S1,4UF,4X3,4Y0,4Z5,5AB,5BE,5C0,5CQ,5D1,5DH,5N6,5Q0,5R4,5RQ,5SJ,5V3,5XI,5ZU,6B0,6CA,6FF,6KD,6N2,6U2,6X4,6XP,7AQ,7B5,7IT,7L6,7MJ,7P4,7T7,7TC,7VA,7Y1,8A8,8AR,8G0,8IY,8K3,8N6,8Q3,8QJ,8RM,8T6,8VH,8WH,8Z6,9AH,9CI,9HA,9JC,9KA,9LA,9N1,9NA,9S0,9Z3,9ZX,A8L,AV0,B2E,B53,E0A,EL0,EU2,EZ1,F4L,FM0,G1D,II7,IP5,K4L,KA2,L0R,M8C,N0B,NF4,NR4,NZ0,QA0,QJ0,QL5,QR8,T12,U5A,U9B,UG5/D6MOFASideview/b19d7b4a-df80-487c-908a-47785dbb35fc/fd95af98cec76cda3aa95ee5b2b5ad03d111bed764d7a2eca311486506643525.png?width=648" alt="car1" class="CarImage">
+            <br></br>
+            <div class="content">
+              <h2>Summary</h2> 
+              The Caravelle 6.1 is an ambitious all-rounder that earns its keep – and then some. A spacious seven seater, its bold restyling includes new head-turning colours, finishes and an updated grille design. Suited for power, the 146kW Highline’s seven-speed DSG makes for truly intelligent transmission. Plus, the new electromechanical power steering means state-of-the art driver assist systems. Navigate any journey with its advanced Digital Cockpit that delivers more connectivity than ever before. Performance, comfort, and style – the Caravelle double ticks all the boxes. 
+              <h2>Onboard Components</h2>
+              <ul>
+                <li>4MOTION capabilities</li>
+                <li>Electromechanical speed-sensitive power steering</li>
+                <li>Thermal insulation</li>
+                <li>Ergonomic seats</li>
+                <li>Side Assist monitors</li>
+                <li>Park Assist</li>
+                <li>Crosswind Assist</li>
+                <li>Tyre pressure monotoring system</li>
+                <li>Child safty lock</li>
+                <li>Comfort beding in the roof section</li>
+                <li>10.25-inch display</li>
+                <li>Discover Media Pro Navigation system</li>
+              </ul>  
+            </div>    
+            <h3>R 1 361 500,00  p/car</h3>
+          </div>
+          <hr>
+
+          <div class="container">
+            <div class="label">Crafter</div>
+            <input class="result" type="text" id="Crafter" value=936 />
+            <button onClick="valInc()">Increase</button>
+            <button onClick="valDec()">Decrease</button>
+            <img src="https://r-media.volkswagen.com/v1/VW/7C0/2023/MP1/20220815/en-ZA-za/B4B4/AS/0E2,0GG,0NB,0R0,0WS,0Z0,1AS,1F1,1LB,1MM,1NE,1T3,1TD,1UA,1X2,1Y0,2D0,2JF,2NB,2WA,2Y1,3CA,3JA,3QN,3R2,3RD,3SH,3TJ,3UA,3W3,41X,4A0,4DA,4EA,4FA,4GF,4H1,4HA,4I2,4JA,4L3,4UF,4X0,4Z1,5AC,5BA,5CA,5D1,5DA,5EU,5Q2,5R0,5S0,5V3,6AA,6B0,6DA,6KA,6L0,6N2,6X0,6XA,7AA,7B3,7L3,7N0,7Q0,7U0,7X0,7Y0,8F1,8G0,8ID,8K1,8N4,8QJ,8RD,8T0,8WA,8X0,8YZ,9AC,9CX,9HA,9JC,9LA,9M0,9N0,9NA,9P1,9S5,9Z0,AV0,B0A,DN0,EL0,EU1,F0A,G0K,IL0,IS1,K4A,KA0,L0R,N0L,NZ0,QE0,QJ0,QL7,QR8,QT5,QV0,U5A,UG1,US0/D6MOFASideview/b19d7b4a-df80-487c-908a-47785dbb35fc/9ada5881c0dacd9e734ec190999ff56e5e2c025fcbcbefd23c5de12a28e0fe88.png?width=648" alt="car1" class="CarImage">
+            <br></br>
+            <div class="content">
+              <h2>Summary</h2> 
+              Volkswagen Commercial Vehicles understands that time is money and your business needs a vehicle that you can rely on; a vehicle that can handle the pressures of doing business in the most flexible and economical way. By combining rugged versatility, cutting-edge engineering and a business-orientated approach, the new Crafter is the ultimate transport solution. Offering reliability, durability and adaptability all rolled into one package with the efficiency to match, the new Crafter is practically tailor-made for your requirements. Its robust nature can cope with the most taxing road conditions and the fuel-efficient, economically friendly TDI engine makes it perfectly suited to the transportation demands of the typical South African business. 
+              <h2>Onboard Components</h2>
+              <ul>
+                <li>Electronic Stabilisation Programme</li>
+                <li>Electromechanical speed-sensitive power steering</li>
+                <li>Thermal insulation</li>
+                <li>Ergonomic seats</li>
+                <li>Multi-Collision Braking</li>
+                <li>Traction Control System</li>
+                <li>Electronic Brake-force Distribution</li>
+                <li>The lashing eyes have a strong retention force of 500daN(kgs)</li>
+                <li>75 litre fuel tank</li>
+                <li>2.5 tons and torque of up to 340Nm</li>
+                <li>13.5 ton GVM version and a 5 ton GVM</li>
+                <li>Radio/CD player</li>
+                <li>Semi-automatic Climatic air conditioning system</li>
+              </ul>  
+            </div>    
+            <h3>R 684 800,00  p/car</h3>
+          </div>
+          <hr>
+
+        </div>
+        </div>
+      
+        <script src="index.js" type="text/javascript"></script>
+
+</body>
+</html>
